@@ -1,0 +1,255 @@
+{
+  "benchmark": "osworld-v2.1",
+  "official_code": "3d778a3c9a34a079316f70df023b166700445792",
+  "agent_s2_source": "1f1506260443340276342580fd8f0b5c20f2817f",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "max_steps": 150,
+  "guest_memory_mb": 4096,
+  "files": {
+    "agents/framework/LICENSE": {
+      "sha256": "5ad8c213095c573921d7388edf93f6a9f54490b8ebf3b165ae8ef1947cf70846",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/agent_s.py": {
+      "sha256": "5790b3d7ae4c68d27227470fa39109c70142980951a8a1508270464299cc3fa7",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/grounding.py": {
+      "sha256": "1a6acf9475ba4a52e244fa1eb6268135f9b453eeefb6c528b41f8f965753e0cb",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/manager.py": {
+      "sha256": "fa2b0d76f40d5d8ae3431177bbf92b4102873adf6a3e1ec778819ab57cb82c5b",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/mobile_aci.py": {
+      "sha256": "4b397479b105a6c50bdfe62d9f63172eb4f95796d51f6b30d0d93e93f0728097",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/agents/worker.py": {
+      "sha256": "925add66cd53287758c88268f4e669fec5aff5e6d6cd00a6e5c2f68ebc8d5b41",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/cli_app.py": {
+      "sha256": "7e841ad37682dbea636de13afa1311f149707726a0915c71013d79c83878def9",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/core/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/core/engine.py": {
+      "sha256": "58f30cbf44095245969b68bf54f73be33e8c71654ce700569d854c7e422dc2a1",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/core/knowledge.py": {
+      "sha256": "17f2edf9df5884fa68bdf80e9f43692d6a815d5211ccb7e59ff25179cc6f8508",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/core/mllm.py": {
+      "sha256": "597e55330e9e00efcb6410a3b57462ba5339ccf6780d7259a2e8b12eef9ad39d",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/core/module.py": {
+      "sha256": "17646ff396900938f274929fbd2ac408a921da094249a6570be9b93a5363907b",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/memory/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/memory/procedural_memory.py": {
+      "sha256": "80f1414228d522b2f6abdb365370ee36f2daa93494ddc2c9d08720bd8cc81dd9",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/utils/common_utils.py": {
+      "sha256": "d0e0fb168102e67d40233fddb4109efac84c053cd67af625ac1fba46055dd325",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/s2/utils/query_perplexica.py": {
+      "sha256": "a65114b29e9a433f07f2dfddc5d4c8ff77d26769fa940be02031f7cc2312880c",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/gui_agents/utils.py": {
+      "sha256": "d6c404b0b0a84d810fa483282c8b8a059fb7026e08051da32792b8de21d92f16",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/framework/requirements.txt": {
+      "sha256": "4415378b0a56e272d5fa332ac1d3ce5661b20850a65567722f11398008b9cca2",
+      "source": "1f1506260443340276342580fd8f0b5c20f2817f"
+    },
+    "agents/launchers/agent_s2_028_054.py": {
+      "sha256": "8d538d345ca30228c24635c0986ee50c36fa2c905b221ab4b7cf273fece23067",
+      "source": "local Agent-S2 launch and status"
+    },
+    "agents/launchers/agent_s2_sol54.py": {
+      "sha256": "cb0d59da43163804a1d6ba7984412a2fe987e41b243a64de8712c9e66add9fa6",
+      "source": "deployed Agent-S2 runtime"
+    },
+    "agents/launchers/agent_s2_status_window.py": {
+      "sha256": "d5a1bb674a585c495a5a09bf6c3fbeabd84c2e91b0ec9a43cc88c42fa07d9e09",
+      "source": "local Agent-S2 launch and status"
+    },
+    "agents/launchers/maintain_sol54.py": {
+      "sha256": "83bf8c10853d40177f83a9ca9ab5bcb9974f6b9f0350a94884a21a57c9924ef6",
+      "source": "deployed Agent-S2 runtime"
+    },
+    "agents/runtime/attempt_integrity.py": {
+      "sha256": "3d7633fbd2f67eb788b4a930730125c3200651bd95ec543b0f0e0908848fcf5b",
+      "source": "attempt validator used by Agent-S2 desktop launcher"
+    },
+    "agents/runtime/desktop_worker.py": {
+      "sha256": "bed923023c697d096e23560b9329408a0e6b1079723b04a87f3b86f477a4140b",
+      "source": "desktop worker launched by Agent-S2"
+    },
+    "shared/agent_s2_runtime/bounded_api_transport.py": {
+      "sha256": "919bb979bb9d6426813f97644bd063be57a478d111fcaa51bf544e07b1751829",
+      "source": "Agent-S2 worker shared module checkout"
+    },
+    "shared/agent_s2_runtime/direct_cdp.py": {
+      "sha256": "cfb68155de210ba43f8010b3cc7fe2c609ad774bed82147050582fc8e87e1944",
+      "source": "Agent-S2 worker shared module checkout"
+    },
+    "shared/agent_s2_runtime/native_qemu_v2.py": {
+      "sha256": "0fbfe104e0262dfc5dbd8ec1ce86aa28ae194487da3f18d49a511f853552474e",
+      "source": "Agent-S2 worker shared module checkout"
+    },
+    "shared/agent_s2_runtime/run_reliability.py": {
+      "sha256": "a0d490ba4f25ebeabfb1a56dcce95a9246e9757fd30d3fd0ba59525458d88736",
+      "source": "Agent-S2 worker shared module checkout"
+    },
+    "uipath/runtime/bounded_api_transport.py": {
+      "sha256": "919bb979bb9d6426813f97644bd063be57a478d111fcaa51bf544e07b1751829",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/campaign.json": {
+      "sha256": "094267855fb1077bae0fef15dbe2931b88feb58bd57db505ce8879c17cdb161d",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/desktop_worker.py": {
+      "sha256": "f04bfa96d669d3da421a1b566b60291c8ff7a8e53b417559aaa193a8685030a2",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/direct_cdp.py": {
+      "sha256": "cfb68155de210ba43f8010b3cc7fe2c609ad774bed82147050582fc8e87e1944",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/gateway_settings.py": {
+      "sha256": "893523b42efaf181c9a97537bd9ab2040e9b624cb49f319242da2bf212930d90",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/model_probe.py": {
+      "sha256": "67ed8ffbe82c51fcd6205906502aac89bfd8f789fde4f0d7a2466137af1bde5c",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/native_qemu_v2.py": {
+      "sha256": "ac9d2e9a04f44be51f8fe847691def752a18db99aa8c5ce7b952beaff2a51003",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/planner_response_schema.py": {
+      "sha256": "084f20fdb116c2e2dcc23cf159fafa69730b6c50074ee8b388cba90d6662cb44",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/prepare_data.py": {
+      "sha256": "df04d2faf7f0c904888aa308d6d1576fbbe1bd85d18be17c78d32b5b044397be",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/requirements-r3.txt": {
+      "sha256": "9b3c34bf711b655fdf6c07b2d2641c7d0f10de75dbec91cf4a133495f8621f67",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/run_reliability.py": {
+      "sha256": "b31e0d941a0079051c03db61c58cd6348536d9c8240b1a644b5bb6f99c8769bc",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/runtime/uipath_batch.py": {
+      "sha256": "9125f6d789bd5a0a20053fe8c8ff401366ca36831b02094b7d0c022d26fa7ddd",
+      "source": "pinned UiPath R3.1 runtime"
+    },
+    "uipath/targeted/bootstrap.sh": {
+      "sha256": "b1e2d681ffb0f0b964215b631e2844311690ff7fb746708f7893f18326724b83",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/bootstrap_native.sh": {
+      "sha256": "61a36330392b40f968e71d8bb7e50e0bd53bae3a4e0c123939d8183561a6d96d",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/compose.template.yml": {
+      "sha256": "9a9174914ba8de7362ce95867e8a572aaec527cb952163dd025961460a8fab22",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/finish_native.sh": {
+      "sha256": "8091f81eeebc83ce9824b476e5721860dc63052ba22bd19240265a1812e9e41e",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/gitlab_status_window.py": {
+      "sha256": "ed114af9a40eb1cfaa777a584f697e4e389f590983bcb3c493a1cad0573638f7",
+      "source": "status monitor with secondary shard cases"
+    },
+    "uipath/targeted/hydrate_osworld041.py": {
+      "sha256": "1974816cb8b44b431e630ed634f68cb238c794c21b5db2be0e3eafde047b7fbd",
+      "source": "targeted retry and source mirror tools"
+    },
+    "uipath/targeted/osworld_gitlab_resume_eval.py": {
+      "sha256": "71d5b892f3b34eca3d349f5606b750b020f9fedf63272bb97e516241ec97d383",
+      "source": "targeted retry and source mirror tools"
+    },
+    "uipath/targeted/osworld_uipath_retry_three.py": {
+      "sha256": "4c5d055257c7b16c548bd7af4ef5829cf5333ca7385b1cf46fae6efdb4996c02",
+      "source": "targeted retry launcher with early-exit handoff fix"
+    },
+    "uipath/targeted/preflight_local.py": {
+      "sha256": "4836e1489297ef267c5c093640bdd1a48c1b557798b28b0b2bb50b45e5f118f3",
+      "source": "shared helper used by the deployed GitLab preflight"
+    },
+    "uipath/targeted/prepare_local.py": {
+      "sha256": "581c6966afbdfcbaf28f97ff72a37986b83c0062d7e4e41a2228f873b76f6faf",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/register_runner.py": {
+      "sha256": "7bb5dace6a1721907c5125eb4ac6386a4bc7b43e04c293233aa76a67ed5b3c42",
+      "source": "deployed local GitLab adaptation"
+    },
+    "uipath/targeted/serve_osworld026_attachment.py": {
+      "sha256": "95bc532f9cc33fa15619aa8896a1e3f2376b4bea821e125db759e5e5df3f0a22",
+      "source": "targeted retry and source mirror tools"
+    },
+    "uipath/targeted/uipath_gitlab.py": {
+      "sha256": "775ad88df7fc8f2bca8c8a33b1e03285be71a4acd876ed560e2151e8c20bf31e",
+      "source": "deployed local GitLab adaptation"
+    },
+    "upstream/agent_s2/lib_results_logger.py": {
+      "sha256": "6d5df666a9369096cfee20feae05a10095879e1073e8cae3f07cb2e34139f6bc",
+      "source": "active Agent-S2 OSWorld checkout"
+    },
+    "upstream/agent_s2/scripts/tools/download_osworld_v2_assets.py": {
+      "sha256": "48252429750c93b97ea0b11561ef67a3d477719ad553880189ab1f310fcb2985",
+      "source": "active Agent-S2 OSWorld checkout"
+    },
+    "upstream/uipath/lib_results_logger.py": {
+      "sha256": "6d5df666a9369096cfee20feae05a10095879e1073e8cae3f07cb2e34139f6bc",
+      "source": "pinned R3.1 OSWorld checkout"
+    },
+    "upstream/uipath/scripts/tools/download_osworld_v2_assets.py": {
+      "sha256": "48252429750c93b97ea0b11561ef67a3d477719ad553880189ab1f310fcb2985",
+      "source": "pinned R3.1 OSWorld checkout"
+    }
+  }
+}

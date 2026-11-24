@@ -1,0 +1,2 @@
+# R3 adapter dependency; keep the upstream OSWorld lock unmodified.
+jsonschema==4.19.2

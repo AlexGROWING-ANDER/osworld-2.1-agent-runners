@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:18.7.0-ce.0
+    restart: unless-stopped
+    shm_size: 256m
+    ports:
+      - "18182:18182"
+      - "18183:18183"
+      - "18723:22"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://WINDOWS_HOST:18182'
+        pages_external_url 'https://PAGES_HOST:18183'
+        letsencrypt['enable'] = false
+        nginx['ssl_certificate'] = '/etc/osworld-tls/server.crt'
+        nginx['ssl_certificate_key'] = '/etc/osworld-tls/server.key'
+        pages_nginx['ssl_certificate'] = '/etc/osworld-tls/server.crt'
+        pages_nginx['ssl_certificate_key'] = '/etc/osworld-tls/server.key'
+        gitlab_pages['enable'] = true
+        gitlab_pages['namespace_in_path'] = true
+        gitlab_pages['access_control'] = false
+        gitlab_rails['gitlab_shell_ssh_port'] = 18723
+        puma['worker_processes'] = 0
+        sidekiq['concurrency'] = 5
+        prometheus_monitoring['enable'] = false
+        registry['enable'] = false
+    volumes:
+      - gitlab_config:/etc/gitlab
+      - gitlab_logs:/var/log/gitlab
+      - gitlab_data:/var/opt/gitlab
+      - ./tls:/etc/osworld-tls:ro
+      - ./tls/ca.crt:/etc/gitlab/trusted-certs/osworld-ca.crt:ro
+
+  runner:
+    image: gitlab/gitlab-runner:alpine-v18.7.0
+    restart: unless-stopped
+    depends_on:
+      - gitlab
+    volumes:
+      - ./runner:/etc/gitlab-runner
+      - ./tls/ca.crt:/etc/gitlab-runner/certs/ca.crt:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:
